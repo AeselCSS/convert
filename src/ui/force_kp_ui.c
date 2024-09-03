@@ -55,7 +55,7 @@ void select_force_kp_menu_option()
             break;
         case 'X':
         case 'x':
-            printf("Exiting force conversion\n");
+            printf("Exiting Kilopond conversion\n");
             is_exited = true;
             break;
         default:

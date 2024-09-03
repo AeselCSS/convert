@@ -58,7 +58,7 @@ void select_pressure_inH2O_menu_option()
             break;
         case 'X':
         case 'x':
-            printf("Exiting pressure conversion\n");
+            printf("Exiting inH2O conversion\n");
             is_exited = true;
             break;
         default:

@@ -55,7 +55,7 @@ void select_pressure_mmHg_menu_option()
             break;
         case 'X':
         case 'x':
-            printf("Exiting pressure conversion\n");
+            printf("Exiting mmHg conversion\n");
             is_exited = true;
             break;
         default:

@@ -55,7 +55,7 @@ void select_force_dyne_menu_option()
             break;
         case 'X':
         case 'x':
-            printf("Exiting force conversion\n");
+            printf("Exiting Dyne conversion\n");
             is_exited = true;
             break;
         default:

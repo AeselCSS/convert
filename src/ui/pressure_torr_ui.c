@@ -56,7 +56,7 @@ void select_pressure_torr_menu_option()
             break;
         case 'X':
         case 'x':
-            printf("Exiting pressure conversion\n");
+            printf("Exiting Torr conversion\n");
             is_exited = true;
             break;
         default:

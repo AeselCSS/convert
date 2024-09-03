@@ -55,7 +55,7 @@ void select_volume_firkin_menu_option()
             break;
         case 'X':
         case 'x':
-            printf("Exiting volume conversion\n");
+            printf("Exiting Firkin conversion\n");
             is_exited = true;
             break;
         default:
