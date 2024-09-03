@@ -31,7 +31,7 @@ void select_force_kp_menu_option()
             printf("Dyne selected\n");
             // enter amount in Dyne
             printf("Enter the amount in Dyne: ");
-            float value = get_value();
+            value = get_value();
             result = dyne_to_kilopond(value);
             printf("%f Dyne is equal to %f Kilopond\n", value, result);
             break;
