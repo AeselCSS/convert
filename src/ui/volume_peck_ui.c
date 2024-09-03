@@ -32,7 +32,7 @@ void select_volume_peck_menu_option()
             // enter amount in Minim
             printf("Enter the amount in Minim: ");
             value = get_value();
-            result = convert_minim_to_peck(value);
+            result = minim_to_peck(value);
             printf("Result: %f Minim is %f Peck\n", value, result);
             break;
         case 'F':
@@ -41,7 +41,7 @@ void select_volume_peck_menu_option()
             // enter amount in Firkin
             printf("Enter the amount in Firkin: ");
             value = get_value();
-            result = convert_firkin_to_peck(value);
+            result = firkin_to_peck(value);
             printf("Result: %f Firkin is %f Peck\n", value, result);
             break;
         case 'L':
@@ -50,7 +50,7 @@ void select_volume_peck_menu_option()
             // enter amount in Litre
             printf("Enter the amount in Litre: ");
             value = get_value();
-            result = convert_litre_to_peck(value);
+            result = litre_to_peck(value);
             printf("Result: %f Litre is %f Peck\n", value, result);
             break;
         case 'X':

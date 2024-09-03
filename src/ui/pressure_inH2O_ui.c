@@ -34,7 +34,7 @@ void select_pressure_inH2O_menu_option()
             // enter amount in mmHg
             printf("Enter the amount in mmHg: ");
             value = get_value();
-            result = convert_mmHg_to_inH2O(value);
+            result = mmHg_to_inH2O(value);
             printf("Result: %f mmHg is %f inH2O\n", value, result);
             break;
         case 'T':
@@ -43,7 +43,7 @@ void select_pressure_inH2O_menu_option()
             // enter amount in Torr
             printf("Enter the amount in Torr: ");
             value = get_value();
-            result = convert_torr_to_inH2O(value);
+            result = torr_to_inH2O(value);
             printf("Result: %f Torr is %f inH2O\n", value, result);
             break;
         case 'P':
@@ -52,7 +52,7 @@ void select_pressure_inH2O_menu_option()
             // enter amount in Pascal
             printf("Enter the amount in Pascal: ");
             value = get_value();
-            result = convert_pascal_to_inH2O(value);
+            result = pascal_to_inH2O(value);
             printf("Result: %f Pascal is %f inH2O\n", value, result);
             break;
         case 'X':

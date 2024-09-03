@@ -31,7 +31,7 @@ void select_pressure_mmHg_menu_option()
             printf("Inch of water (inH2O) selected\n");
             printf("Enter the amount in inH2O: ");
             value = get_value();
-            result = convert_inH2O_to_mmHg(value);
+            result = inH2O_to_mmHg(value);
             printf("Result: %f inH2O is %f mmHg\n", value, result);
             break;
         case 'T':
@@ -39,7 +39,7 @@ void select_pressure_mmHg_menu_option()
             printf("Torr selected\n");
             printf("Enter the amount in Torr: ");
             value = get_value();
-            result = convert_torr_to_mmHg(value);
+            result = torr_to_mmHg(value);
             printf("Result: %f Torr is %f mmHg\n", value, result);
             break;
         case 'P':
@@ -47,7 +47,7 @@ void select_pressure_mmHg_menu_option()
             printf("Pascal selected\n");
             printf("Enter the amount in Pascal: ");
             value = get_value();
-            result = convert_pascal_to_mmHg(value);
+            result = pascal_to_mmHg(value);
             printf("Result: %f Pascal is %f mmHg\n", value, result);
             break;
         case 'X':
