@@ -2,7 +2,7 @@
 #include <stdbool.h>
 #include "pressure_torr_ui.h"
 #include "utility.h"
-
+#include "pressure.h"
 
 void display_pressure_torr_menu()
 {
@@ -16,6 +16,8 @@ void display_pressure_torr_menu()
 void select_pressure_torr_menu_option()
 {
     char selection;
+    float value;
+    float result;
     bool is_exited = false;
     do
     {
@@ -29,10 +31,9 @@ void select_pressure_torr_menu_option()
             printf("Millimeter of mercury (mmHg) selected\n");
             // enter amount in mmHg
             printf("Enter the amount in mmHg: ");
-            float value = get_value();
-            //DUMMY PRINT STATEMENT TO TEST VALUE
-            printf("You entered: %f\n", value);
-            // Call pressure conversion function
+            value = get_value();
+            result = convert_mmHg_to_torr(value);
+            printf("Result: %f mmHg is %f Torr\n", value, result);
             break;
         case 'I':
         case 'i':
@@ -40,9 +41,8 @@ void select_pressure_torr_menu_option()
             // enter amount in inH2O
             printf("Enter the amount in inH2O: ");
             value = get_value();
-            //DUMMY PRINT STATEMENT TO TEST VALUE
-            printf("You entered: %f\n", value);
-            // Call pressure conversion function
+            result = convert_inH2O_to_torr(value);
+            printf("Result: %f inH2O is %f Torr\n", value, result);
             break;
         case 'P':
         case 'p':
@@ -50,9 +50,8 @@ void select_pressure_torr_menu_option()
             // enter amount in Pascal
             printf("Enter the amount in Pascal: ");
             value = get_value();
-            //DUMMY PRINT STATEMENT TO TEST VALUE
-            printf("You entered: %f\n", value);
-            // Call pressure conversion function
+            result = convert_pascal_to_torr(value);
+            printf("Result: %f Pascal is %f Torr\n", value, result);
             break;
         case 'X':
         case 'x':

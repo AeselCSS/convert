@@ -2,6 +2,7 @@
 #include <stdbool.h>
 #include "force_sthene_ui.h"
 #include "utility.h"
+#include "force.h"
 
 void display_force_sthene_menu()
 {
@@ -15,6 +16,8 @@ void display_force_sthene_menu()
 void select_force_sthene_menu_option()
 {
     char selection;
+    float value;
+    float result;
     bool is_exited = false;
     do
     {
@@ -26,12 +29,10 @@ void select_force_sthene_menu_option()
         case 'D':
         case 'd':
             printf("Dyne selected\n");
-            // enter amount in Dyne
             printf("Enter the amount in Dyne: ");
-            float value = get_value();
-            //DUMMY PRINT STATEMENT TO TEST VALUE
-            printf("You entered: %f\n", value);
-            // Call force conversion function
+            value = get_value();
+            result = dyne_to_sthene(value);
+            printf("%f Dyne is equal to %f Sthène\n", value, result);
             break;
         case 'K':
         case 'k':
@@ -39,9 +40,8 @@ void select_force_sthene_menu_option()
             // enter amount in Kilopond
             printf("Enter the amount in Kilopond: ");
             value = get_value();
-            //DUMMY PRINT STATEMENT TO TEST VALUE
-            printf("You entered: %f\n", value);
-            // Call force conversion function
+            result = kilopond_to_sthene(value);
+            printf("%f Kilopond is equal to %f Sthène\n", value, result);
             break;
         case 'N':
         case 'n':
@@ -49,9 +49,8 @@ void select_force_sthene_menu_option()
             // enter amount in Newton
             printf("Enter the amount in Newton: ");
             value = get_value();
-            //DUMMY PRINT STATEMENT TO TEST VALUE
-            printf("You entered: %f\n", value);
-            // Call force conversion function
+            result = newton_to_sthene(value);
+            printf("%f Newton is equal to %f Sthène\n", value, result);
             break;
         case 'X':
         case 'x':

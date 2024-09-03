@@ -2,6 +2,7 @@
 #include <stdbool.h>
 #include "force_kp_ui.h"
 #include "utility.h"
+#include "force.h"
 
 void display_force_kp_menu()
 {
@@ -15,6 +16,8 @@ void display_force_kp_menu()
 void select_force_kp_menu_option()
 {
     char selection;
+    float value;
+    float result;
     bool is_exited = false;
     do
     {
@@ -29,9 +32,8 @@ void select_force_kp_menu_option()
             // enter amount in Dyne
             printf("Enter the amount in Dyne: ");
             float value = get_value();
-            //DUMMY PRINT STATEMENT TO TEST VALUE
-            printf("You entered: %f\n", value);
-            // Call force conversion function
+            result = dyne_to_kilopond(value);
+            printf("%f Dyne is equal to %f Kilopond\n", value, result);
             break;
         case 'S':
         case 's':
@@ -39,9 +41,8 @@ void select_force_kp_menu_option()
             // enter amount in Sthene
             printf("Enter the amount in Sthène: ");
             value = get_value();
-            //DUMMY PRINT STATEMENT TO TEST VALUE
-            printf("You entered: %f\n", value);
-            // Call force conversion function
+            result = sthene_to_kilopond(value);
+            printf("%f Sthène is equal to %f Kilopond\n", value, result);
             break;
         case 'N':
         case 'n':
@@ -49,9 +50,8 @@ void select_force_kp_menu_option()
             // enter amount in Newton
             printf("Enter the amount in Newton: ");
             value = get_value();
-            //DUMMY PRINT STATEMENT TO TEST VALUE
-            printf("You entered: %f\n", value);
-            // Call force conversion function
+            result = newton_to_kilopond(value);
+            printf("%f Newton is equal to %f Kilopond\n", value, result);
             break;
         case 'X':
         case 'x':

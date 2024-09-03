@@ -2,6 +2,7 @@
 #include <stdbool.h>
 #include "pressure_inH2O_ui.h"
 #include "utility.h"
+#include "pressure.h"
 
 void display_pressure_inH2O_menu()
 {
@@ -16,6 +17,7 @@ void select_pressure_inH2O_menu_option()
 {
     char selection;
     float value;
+    float result;
     bool is_exited = false;
     do
     {
@@ -32,9 +34,8 @@ void select_pressure_inH2O_menu_option()
             // enter amount in mmHg
             printf("Enter the amount in mmHg: ");
             value = get_value();
-            //DUMMY PRINT STATEMENT TO TEST VALUE
-            printf("You entered: %f\n", value);
-            // Call pressure conversion function
+            result = convert_mmHg_to_inH2O(value);
+            printf("Result: %f mmHg is %f inH2O\n", value, result);
             break;
         case 'T':
         case 't':
@@ -42,9 +43,8 @@ void select_pressure_inH2O_menu_option()
             // enter amount in Torr
             printf("Enter the amount in Torr: ");
             value = get_value();
-            //DUMMY PRINT STATEMENT TO TEST VALUE
-            printf("You entered: %f\n", value);
-            // Call pressure conversion function
+            result = convert_torr_to_inH2O(value);
+            printf("Result: %f Torr is %f inH2O\n", value, result);
             break;
         case 'P':
         case 'p':
@@ -52,9 +52,8 @@ void select_pressure_inH2O_menu_option()
             // enter amount in Pascal
             printf("Enter the amount in Pascal: ");
             value = get_value();
-            //DUMMY PRINT STATEMENT TO TEST VALUE
-            printf("You entered: %f\n", value);
-            // Call pressure conversion function
+            result = convert_pascal_to_inH2O(value);
+            printf("Result: %f Pascal is %f inH2O\n", value, result);
             break;
         case 'X':
         case 'x':

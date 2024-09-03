@@ -2,6 +2,7 @@
 #include <stdbool.h>
 #include "volume_firkin_ui.h"
 #include "utility.h"
+#include "volume.h"
 
 void display_volume_firkin_menu()
 {
@@ -15,6 +16,8 @@ void display_volume_firkin_menu()
 void select_volume_firkin_menu_option()
 {
     char selection;
+    float value;
+    float result;
     bool is_exited = false;
     do
     {
@@ -28,10 +31,9 @@ void select_volume_firkin_menu_option()
             printf("Minim selected\n");
             // enter amount in Minim
             printf("Enter the amount in Minim: ");
-            float value = get_value();
-            //DUMMY PRINT STATEMENT TO TEST VALUE
-            printf("You entered: %f\n", value);
-            // Call volume conversion function
+            value = get_value();
+            result = convert_minim_to_firkin(value);
+            printf("Result: %f Minim is %f Firkin\n", value, result);
             break;
         case 'P':
         case 'p':
@@ -39,9 +41,8 @@ void select_volume_firkin_menu_option()
             // enter amount in Peck
             printf("Enter the amount in Peck: ");
             value = get_value();
-            //DUMMY PRINT STATEMENT TO TEST VALUE
-            printf("You entered: %f\n", value);
-            // Call volume conversion function
+            result = convert_peck_to_firkin(value);
+            printf("Result: %f Peck is %f Firkin\n", value, result);
             break;
         case 'L':
         case 'l':
@@ -49,9 +50,8 @@ void select_volume_firkin_menu_option()
             // enter amount in Litre
             printf("Enter the amount in Litre: ");
             value = get_value();
-            //DUMMY PRINT STATEMENT TO TEST VALUE
-            printf("You entered: %f\n", value);
-            // Call volume conversion function
+            result = convert_litre_to_firkin(value);
+            printf("Result: %f Litre is %f Firkin\n", value, result);
             break;
         case 'X':
         case 'x':
