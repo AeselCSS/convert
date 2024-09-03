@@ -55,7 +55,7 @@ void select_volume_peck_menu_option()
             break;
         case 'X':
         case 'x':
-            printf("Exiting volume conversion\n");
+            printf("Exiting Peck conversion\n");
             is_exited = true;
             break;
         default:
