@@ -3,8 +3,7 @@
 
 int main() 
 {
-    display_intro();
-    select_convert_menu_option();
+    select_convert_menu_option(true);
 
     return 0;
 }

@@ -28,7 +28,7 @@ void select_force_kp_menu_option()
         {
         case 'D':
         case 'd':
-            printf("Dyne selected\n");
+            printf("Dyne selected\n\n");
             // enter amount in Dyne
             printf("Enter the amount in Dyne: ");
             value = get_value();
@@ -37,7 +37,7 @@ void select_force_kp_menu_option()
             break;
         case 'S':
         case 's':
-            printf("Sthène selected\n");
+            printf("Sthène selected\n\n");
             // enter amount in Sthene
             printf("Enter the amount in Sthène: ");
             value = get_value();
@@ -46,7 +46,7 @@ void select_force_kp_menu_option()
             break;
         case 'N':
         case 'n':
-            printf("Newton selected\n");
+            printf("Newton selected\n\n");
             // enter amount in Newton
             printf("Enter the amount in Newton: ");
             value = get_value();

@@ -30,7 +30,7 @@ void select_pressure_inH2O_menu_option()
         {
         case 'M':
         case 'm':
-            printf("Millimeter of mercury (mmHg) selected\n");
+            printf("Millimeter of mercury (mmHg) selected\n\n");
             // enter amount in mmHg
             printf("Enter the amount in mmHg: ");
             value = get_value();
@@ -39,7 +39,7 @@ void select_pressure_inH2O_menu_option()
             break;
         case 'T':
         case 't':
-            printf("Torr selected\n");
+            printf("Torr selected\n\n");
             // enter amount in Torr
             printf("Enter the amount in Torr: ");
             value = get_value();
@@ -48,7 +48,7 @@ void select_pressure_inH2O_menu_option()
             break;
         case 'P':
         case 'p':
-            printf("Pascal selected\n");
+            printf("Pascal selected\n\n");
             // enter amount in Pascal
             printf("Enter the amount in Pascal: ");
             value = get_value();

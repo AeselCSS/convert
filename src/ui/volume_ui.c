@@ -5,11 +5,14 @@
 
 void display_volume_menu()
 {
-    // units of volume: Minim, Peck and Firkin.
+    clear_display();
+    printf("Volume Conversion:\n");
+    printf("---------------------------------------------------------\n");
     printf("Please select from the following volume units:\n");
     printf("M. Minim\n");
     printf("P. Peck\n");
-    printf("F. Firkin\n");    
+    printf("F. Firkin\n");
+    printf("X. Exit\n");    
 }
 
 void select_volume_menu_option()
@@ -25,17 +28,17 @@ void select_volume_menu_option()
         {
         case 'M':
         case 'm':
-            printf("Minim selected\n");
+            printf("Minim selected\n\n");
             select_volume_minim_menu_option();
             break;
         case 'P':
         case 'p':
-            printf("Peck selected\n");
+            printf("Peck selected\n\n");
             select_volume_peck_menu_option();
             break;
         case 'F':
         case 'f':
-            printf("Firkin selected\n");
+            printf("Firkin selected\n\n");
             select_volume_firkin_menu_option();
             break;
         case 'X':

@@ -3,5 +3,6 @@
 
 char get_choice();
 float get_value();
+void clear_display();
 
 #endif // UTILITY_H

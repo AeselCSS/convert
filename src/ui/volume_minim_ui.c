@@ -28,29 +28,27 @@ void select_volume_minim_menu_option()
         {
         case 'P':
         case 'p':
-            printf("Peck selected\n");
-            // enter amount in Peck
+            printf("Peck selected\n\n");
             printf("Enter the amount in Peck: ");
             value = get_value();
             result = peck_to_minim(value);
-            printf("Result: %f Peck is %f Minim\n", value, result);
+            printf("Result: %f Peck is %f Minim\n\n", value, result);
             break;
         case 'F':
         case 'f':
-            printf("Firkin selected\n");
-            // enter amount in Firkin
+            printf("Firkin selected\n\n");
             printf("Enter the amount in Firkin: ");
             value = get_value();
             result = firkin_to_minim(value);
-            printf("Result: %f Firkin is %f Minim\n", value, result);
+            printf("Result: %f Firkin is %f Minim\n\n", value, result);
             break;
         case 'L':
         case 'l':
-            printf("Litre selected\n");
-            // enter amount in Litre
+            printf("Litre selected\n\n");
             printf("Enter the amount in Litre: ");
             value = get_value();
             result = litre_to_minim(value);
+            printf("Result: %f Litre is %f Minim\n\n", value, result);
             break;
         case 'X':
         case 'x':
