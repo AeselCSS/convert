@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include "pressure_ui.h"
-#include "pressure_mmHg_ui.h"
-#include "pressure_inH2O_ui.h"
-#include "pressure_torr_ui.h"
 #include "utility.h"
 
 void display_pressure_menu()
