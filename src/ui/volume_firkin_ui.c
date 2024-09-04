@@ -28,30 +28,30 @@ void select_volume_firkin_menu_option()
         {
         case 'M':
         case 'm':
-            printf("Minim selected\n");
+            printf("Minim selected\n\n");
             // enter amount in Minim
             printf("Enter the amount in Minim: ");
             value = get_value();
             result = minim_to_firkin(value);
-            printf("Result: %f Minim is %f Firkin\n", value, result);
+            printf("Result: %f Minim is %f Firkin\n\n", value, result);
             break;
         case 'P':
         case 'p':
-            printf("Peck selected\n");
+            printf("Peck selected\n\n");
             // enter amount in Peck
             printf("Enter the amount in Peck: ");
             value = get_value();
             result = peck_to_firkin(value);
-            printf("Result: %f Peck is %f Firkin\n", value, result);
+            printf("Result: %f Peck is %f Firkin\n\n", value, result);
             break;
         case 'L':
         case 'l':
-            printf("Litre selected\n");
+            printf("Litre selected\n\n");
             // enter amount in Litre
             printf("Enter the amount in Litre: ");
             value = get_value();
             result = litre_to_firkin(value);
-            printf("Result: %f Litre is %f Firkin\n", value, result);
+            printf("Result: %f Litre is %f Firkin\n\n", value, result);
             break;
         case 'X':
         case 'x':

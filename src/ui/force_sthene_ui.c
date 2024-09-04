@@ -28,7 +28,7 @@ void select_force_sthene_menu_option()
         {
         case 'D':
         case 'd':
-            printf("Dyne selected\n");
+            printf("Dyne selected\n\n");
             printf("Enter the amount in Dyne: ");
             value = get_value();
             result = dyne_to_sthene(value);
@@ -36,7 +36,7 @@ void select_force_sthene_menu_option()
             break;
         case 'K':
         case 'k':
-            printf("Kilopond selected\n");
+            printf("Kilopond selected\n\n");
             // enter amount in Kilopond
             printf("Enter the amount in Kilopond: ");
             value = get_value();
@@ -45,7 +45,7 @@ void select_force_sthene_menu_option()
             break;
         case 'N':
         case 'n':
-            printf("Newton selected\n");
+            printf("Newton selected\n\n");
             // enter amount in Newton
             printf("Enter the amount in Newton: ");
             value = get_value();

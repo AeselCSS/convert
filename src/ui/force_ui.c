@@ -5,11 +5,14 @@
 
 void display_force_menu()
 {
-    // units of force: Dyne, Kilopond and Sthene
+    clear_display();
+    printf("Force Conversion:\n");
+    printf("---------------------------------------------------------\n");
     printf("Please select from the following force units:\n");
     printf("D. Dyne\n");
     printf("K. Kilopond\n");
     printf("S. Sthene\n");
+    printf("X. Exit\n");
 }
 
 void select_force_menu_option()
@@ -25,17 +28,17 @@ void select_force_menu_option()
         {
         case 'D':
         case 'd':
-            printf("Dyne selected\n");
+            printf("Dyne selected\n\n");
             select_force_dyne_menu_option();
             break;
         case 'K':
         case 'k':
-            printf("Kilopond selected\n");
+            printf("Kilopond selected\n\n");
             select_force_kp_menu_option();
             break;
         case 'S':
         case 's':
-            printf("Sthène selected\n");
+            printf("Sthène selected\n\n");
             select_force_sthene_menu_option();
             break;
         case 'X':

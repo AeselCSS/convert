@@ -28,30 +28,30 @@ void select_pressure_torr_menu_option()
         {
         case 'M':
         case 'm':
-            printf("Millimeter of mercury (mmHg) selected\n");
+            printf("Millimeter of mercury (mmHg) selected\n\n");
             // enter amount in mmHg
             printf("Enter the amount in mmHg: ");
             value = get_value();
             result = mmHg_to_torr(value);
-            printf("Result: %f mmHg is %f Torr\n", value, result);
+            printf("Result: %f mmHg is %f Torr\n\n", value, result);
             break;
         case 'I':
         case 'i':
-            printf("Inch of water (inH2O) selected\n");
+            printf("Inch of water (inH2O) selected\n\n");
             // enter amount in inH2O
             printf("Enter the amount in inH2O: ");
             value = get_value();
             result = inH2O_to_torr(value);
-            printf("Result: %f inH2O is %f Torr\n", value, result);
+            printf("Result: %f inH2O is %f Torr\n\n", value, result);
             break;
         case 'P':
         case 'p':
-            printf("Pascal selected\n");
+            printf("Pascal selected\n\n");
             // enter amount in Pascal
             printf("Enter the amount in Pascal: ");
             value = get_value();
             result = pascal_to_torr(value);
-            printf("Result: %f Pascal is %f Torr\n", value, result);
+            printf("Result: %f Pascal is %f Torr\n\n", value, result);
             break;
         case 'X':
         case 'x':

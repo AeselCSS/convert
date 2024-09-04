@@ -7,14 +7,17 @@
 #include "utility.h"
 
 
-void display_intro()
+void display_convert_menu(bool is_first_time)
 {
-    printf("Welcome to the Unit Conversion Program\n");
-    printf("This program will convert various rather obscure units of pressure, volume and force.\n\n");
-}
-
-void display_convert_menu()
-{
+    clear_display();
+    if (is_first_time)
+    {
+        printf("Welcome to the Unit Conversion Program\n");
+        printf("This program will convert various rather obscure units of pressure, volume and force.\n\n");
+    }
+    
+    printf("Main Menu\n");
+    printf("---------------------------------------------------------\n");
     printf("Please select from the following menu options:\n");
     printf("P. Pressure\n");
     printf("V. Volume\n");
@@ -22,13 +25,14 @@ void display_convert_menu()
     printf("X. Exit\n");
 }
 
-void select_convert_menu_option()
+void select_convert_menu_option(bool is_first_time)
 {
     char selection;
     bool is_exited = false;
     do
     {
-        display_convert_menu();
+        display_convert_menu(is_first_time);
+        is_first_time = false;
         printf("Enter your selection: ");
         selection = get_choice();
         switch (selection)

@@ -14,3 +14,8 @@ float get_value()
     scanf("%f", &value);
     return value;
 }
+
+void clear_display()
+{
+    printf("\033[H\033[J");
+}
