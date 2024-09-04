@@ -9,8 +9,8 @@
 
 void display_intro()
 {
-    printf("Welcome to the temperature conversion program\n");
-    printf("This program will convert various rather obscure units of pressure, volume and force.\n");
+    printf("Welcome to the Unit Conversion Program\n");
+    printf("This program will convert various rather obscure units of pressure, volume and force.\n\n");
 }
 
 void display_convert_menu()

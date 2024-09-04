@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include "force_ui.h"
-#include "force_dyne_ui.h"
-#include "force_kp_ui.h"
-#include "force_sthene_ui.h"
 #include "utility.h"
 
 void display_force_menu()
