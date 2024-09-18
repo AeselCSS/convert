@@ -1,7 +1,7 @@
 // Conversion constants
-#define MMHG_TO_PASCAL 133.322
-#define INH2O_TO_PASCAL 249.08891
-#define TORR_TO_PASCAL 133.322
+const float MMHG_TO_PASCAL = 133.322;
+const float INH2O_TO_PASCAL = 249.08891;
+const float TORR_TO_PASCAL = 133.322;
 
 // Functions for converting from mmHg to other units
 float mmHg_to_inH2O(float mmHg) {

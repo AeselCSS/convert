@@ -1,7 +1,7 @@
 // Conversion constants
-#define MINIM_TO_LITRE 0.0000616115
-#define PECK_TO_LITRE 9.09218
-#define FIRKIN_TO_LITRE 40.9148
+const float MINIM_TO_LITRE = 0.0000616115;
+const float PECK_TO_LITRE = 9.09218;
+const float FIRKIN_TO_LITRE = 40.9148;
 
 // Functions for converting from minim to other units
 float minim_to_peck(float minim) {

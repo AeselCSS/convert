@@ -32,7 +32,7 @@ void select_volume_minim_menu_option()
             printf("Enter the amount in Peck: ");
             value = get_value();
             result = peck_to_minim(value);
-            printf("Result: %f Peck is %f Minim\n\n", value, result);
+            printf("Result: %.2f Peck is %.3f Minim\n\n", value, result);
             break;
         case 'F':
         case 'f':
@@ -40,7 +40,7 @@ void select_volume_minim_menu_option()
             printf("Enter the amount in Firkin: ");
             value = get_value();
             result = firkin_to_minim(value);
-            printf("Result: %f Firkin is %f Minim\n\n", value, result);
+            printf("Result: %.2f Firkin is %.3f Minim\n\n", value, result);
             break;
         case 'L':
         case 'l':
@@ -48,7 +48,7 @@ void select_volume_minim_menu_option()
             printf("Enter the amount in Litre: ");
             value = get_value();
             result = litre_to_minim(value);
-            printf("Result: %f Litre is %f Minim\n\n", value, result);
+            printf("Result: %.2f Litre is %.3f Minim\n\n", value, result);
             break;
         case 'X':
         case 'x':

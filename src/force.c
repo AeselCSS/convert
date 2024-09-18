@@ -1,7 +1,7 @@
 // Conversion constants
-#define DYNE_TO_NEWTON 1e-5
-#define KILOPOND_TO_NEWTON 9.80665
-#define STHENE_TO_NEWTON 1e3
+const float DYNE_TO_NEWTON = 1e-5;
+const float KILOPOND_TO_NEWTON = 9.80665;
+const float STHENE_TO_NEWTON = 1e3;
 
 // Functions for converting from dyne to other units
 float dyne_to_kilopond(float dyne) {
